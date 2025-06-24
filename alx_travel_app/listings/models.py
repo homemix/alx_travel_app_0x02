@@ -48,6 +48,7 @@ class Payment(models.Model):
     amount = models.DecimalField(max_digits=10, decimal_places=2, null=False)
     payment_date = models.DateField(null=False)
     payment_method = models.CharField(max_length=20, choices=PAYMENT_METHOD_CHOICES, null=False, blank=False)
+    transaction_id = models.TextField(null=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

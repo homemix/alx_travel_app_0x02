@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'drf_yasg',
+    'django_chapa',
     # 'alx_travel_app.listings',
     'listings.apps.ListingsConfig'
 ]
@@ -131,3 +132,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CHAPA_SECRET = env('CHAPA_SECRET_KEY')
+
+CHAPA_API_URL = ''
+
+CHAPA_API_VERSION = 'v1'
+
